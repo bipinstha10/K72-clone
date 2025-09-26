@@ -3,10 +3,12 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Agence from "./pages/Agence";
+import Navbar from "./components/navigation/Navbar";
 
 const App = () => {
   return (
     <div className="text-white">
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
