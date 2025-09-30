@@ -1,14 +1,16 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Projects from "./pages/Projects";
-import Agence from "./pages/Agence";
-import Navbar from "./components/navigation/Navbar";
+import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Agence from './pages/Agence';
+import Navbar from './components/navigation/Navbar';
+import FullScreenNav from './components/navigation/FullScreenNav';
 
 const App = () => {
   return (
     <div className="text-white">
       <Navbar />
+      <FullScreenNav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
