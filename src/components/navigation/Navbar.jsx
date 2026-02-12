@@ -4,7 +4,8 @@ import { NavbarContext } from "../../context/NavbarContext";
 const Navbar = () => {
   const greenNavRef = useRef();
 
-  const [setNavOpen] = useContext(NavbarContext);
+  // eslint-disable-next-line no-unused-vars
+  const [navOpen, setNavOpen] = useContext(NavbarContext);
 
   return (
     <div className="z-4 flex fixed top-0 w-full items-start justify-between">
